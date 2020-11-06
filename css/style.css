@@ -1,0 +1,194 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* utility class */
+.d_flex{
+  display: flex;
+}
+
+.flex_wrap{
+  flex-wrap: wrap;
+}
+
+.col_text_white{
+  color: white;
+}
+
+.col_text_grey{
+  color: #717479;
+}
+/* /utility class */
+
+/* wrapper */
+.wrapper{
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+/* main #side_content */
+
+#side_content{
+  height: calc(100% - 60px);
+}
+
+/* aside.main_menu */
+
+aside.main_menu{
+  background-color: black;
+  min-width: 300px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* main_menu_top */
+
+aside .main_menu_top .logo{
+  width: 60%;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-bottom: 30px;
+}
+
+aside .main_menu_top > div:first-of-type{
+  border-left: 3px solid #ADFF2F;
+}
+
+aside .main_menu_top .col_text_white img{
+  width: 45px;
+  padding-left: 15px;
+}
+
+aside .main_menu_top .col_text_grey img{
+  width: 48px;
+  padding-left: 18px;
+}
+
+aside .main_menu_top a{
+  text-decoration: none;
+}
+
+aside .main_menu_top span{
+  vertical-align: super;
+}
+
+/* playlist */
+.main_menu_top .playlist{
+  padding-top: 30px;
+  padding-left: 18px;
+  color: #717479;
+}
+
+.main_menu_top .playlist div:first-of-type{
+  padding: 15px 0;
+}
+
+.main_menu_top .playlist div:first-of-type span{
+  font-size: 18px;
+  padding-left: 7px;
+}
+
+.main_menu_top .playlist a{
+  text-decoration: none;
+  color: #717479;
+}
+
+.main_menu_top .playlist i{
+  font-size: 40px;
+}
+
+.playlist_name{
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.playlist_name span{
+  display: block;
+  padding-bottom: 15px;
+}
+
+/* /playlist */
+
+/* /main_menu_top */
+
+/* /aside.main_menu */
+
+
+/* cover section */
+
+.cover_section{
+  background-color: #141922;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+  padding-top: 60px;
+  /*margin-top: 60px;*/
+  width: calc(100% - 300px);
+}
+
+
+/* subcribe banner */
+
+.subcribe_banner{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 60px;
+  width: calc(100% - 300px);
+  background: #080B12a1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  justify-content: flex-end;
+}
+
+.subcribe_banner a{
+  padding: 10px 30px;
+  border: 1px solid white;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+}
+
+.subcribe_banner a:hover{
+  color: #717479;
+  border: 1px solid #717479;
+}
+
+/* /subcribe banner */
+
+
+/* section recently played */
+
+.item{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+/* /section recently played */
+
+
+/* /cover section */
+
+
+/* Footer */
+footer#side_footer{
+  background-color: #282828;
+  height: 60px;
+  z-index: 1000;
+  /*
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  */
+}
+/* /Footer */
+/* /wrapper */
