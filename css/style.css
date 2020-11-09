@@ -68,7 +68,7 @@ aside.main_menu{
 /* main_menu_top */
 
 aside .main_menu_top{
-  overflow: hidden;
+  overflow: auto;
 }
 
 aside .main_menu_top .logo{
@@ -130,12 +130,10 @@ aside .main_menu_top span{
   font-size: 40px;
 }
 
-.playlist_name{
-  overflow-y: auto;
-}
-
 .playlist_name ul{
   list-style: none;
+  overflow-y: auto;
+  height: 200px;
 }
 
 .playlist_name li{
