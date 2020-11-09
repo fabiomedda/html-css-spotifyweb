@@ -67,6 +67,10 @@ aside.main_menu{
 
 /* main_menu_top */
 
+aside .main_menu_top{
+  overflow: hidden;
+}
+
 aside .main_menu_top .logo{
   width: 60%;
   padding-top: 20px;
@@ -123,7 +127,6 @@ aside .main_menu_top span{
 }
 
 .playlist_name{
-  max-height: 250px;
   overflow-y: auto;
 }
 
@@ -136,8 +139,8 @@ aside .main_menu_top span{
 }
 
 /* /playlist */
-
 /* /main_menu_top */
+
 
 /* main_menu_bottom */
 .main_menu_bottom{
@@ -175,8 +178,6 @@ aside .main_menu_top span{
 }
 
 /* /main_menu_bottom */
-
-
 /* /aside.main_menu */
 
 
@@ -198,9 +199,10 @@ aside .main_menu_top span{
 .subcribe_banner{
   position: fixed;
   top: 0;
-  right: 0;
+  right: 20px;
+  z-index: 1000;
   height: 60px;
-  width: calc(100% - 300px);
+  width: calc(100% - 320px);
   background: #080B12a1;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -309,11 +311,13 @@ aside .main_menu_top span{
 
 #recently_played .box h3{
   padding: 10px 0;
+  font-size: 15px;
 }
 
 #recently_played .box p{
   padding: 10px 0;
   color: #717479;
+  font-size: 12px;
 }
 
 /* /section recently played */
@@ -371,6 +375,7 @@ aside .main_menu_top span{
 
 #created_for .box h3{
   padding: 10px 0;
+  font-size: 15px;
 }
 
 /* /section created for */
@@ -430,6 +435,7 @@ aside .main_menu_top span{
 
 #popular .box h3{
   padding: 10px 0;
+  font-size: 15px;
 }
 
 
@@ -547,6 +553,32 @@ aside .main_menu_top span{
   width: 212px;
 }
 
+#side_footer .footer_right > div{
+  width: 100%;
+  height: 100%;
+}
+
+#side_footer .footer_right > div i{
+  font-size: 16px;
+  padding: 0 7px;
+  color: white;
+}
+
+#side_footer .footer_right > div i:hover{
+  color: #717479;
+}
+
+#side_footer .footer_right #line_white{
+  height: 2px;
+  width: 20%;
+  background-color: white;
+}
+
+#side_footer .footer_right #line_grey{
+  height: 2px;
+  width: 35%;
+  background-color: #717479;
+}
 
 /* /footer_right */
 
