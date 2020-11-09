@@ -96,6 +96,10 @@ aside .main_menu_top a{
   text-decoration: none;
 }
 
+aside .main_menu_top a:hover{
+  color: white;
+}
+
 aside .main_menu_top span{
   vertical-align: super;
 }
@@ -141,6 +145,19 @@ aside .main_menu_top span{
 /* /playlist */
 /* /main_menu_top */
 
+/* main_menu_top_xs */
+.main_menu_top_xs{
+  display: none;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.main_menu_top_xs img{
+  width: 85%;
+}
+
+/* /main_menu_top_xs */
+
 
 /* main_menu_bottom */
 .main_menu_bottom{
@@ -159,6 +176,10 @@ aside .main_menu_top span{
   color: #717479;
 }
 
+.main_menu_bottom div:first-of-type > a:hover{
+  color: #004cb5;
+}
+
 .main_menu_bottom div:last-of-type{
   padding-top: 10px;
 }
@@ -166,6 +187,10 @@ aside .main_menu_top span{
 .main_menu_bottom div:last-of-type a{
   text-decoration: none;
   color: white;
+}
+
+.main_menu_bottom div:last-of-type a:hover{
+  color: #004cb5;
 }
 
 .main_menu_bottom div:last-of-type i{
@@ -178,6 +203,29 @@ aside .main_menu_top span{
 }
 
 /* /main_menu_bottom */
+
+/* main_menu_bottom_xs */
+
+.main_menu_bottom_xs{
+  display: none;
+  text-align: center;
+}
+
+.main_menu_bottom_xs div i{
+  font-size: 30px;
+  padding-bottom: 5px;
+}
+
+.main_menu_bottom_xs div:first-of-type i{
+  color: #717479;
+}
+
+.main_menu_bottom_xs div:last-of-type i{
+  color: white;
+}
+
+/* /main_menu_bottom_xs */
+
 /* /aside.main_menu */
 
 
@@ -189,7 +237,6 @@ aside .main_menu_top span{
   overflow-x: hidden;
   padding: 20px;
   padding-top: 60px;
-  /*margin-top: 60px;*/
   width: calc(100% - 300px);
 }
 
@@ -245,6 +292,10 @@ aside .main_menu_top span{
   color: #717479;
   padding: 0 10px;
   font-weight: 600;
+}
+
+.cover_section nav ul li a:hover{
+  color: white;
 }
 
 .cover_section nav ul li:first-of-type{
@@ -438,8 +489,6 @@ aside .main_menu_top span{
   font-size: 15px;
 }
 
-
-
 /* /section popular */
 /* /cover section */
 
@@ -453,13 +502,6 @@ aside .main_menu_top span{
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  /* position: relative; */
-  /*
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  */
 }
 
 /* footer_left */
@@ -507,9 +549,6 @@ aside .main_menu_top span{
 /* footer_center */
 #side_footer .footer_center{
   width: 550px;
-  /* position: absolute;
-  left: 50%;
-  transform: translateX(-50%); */
 }
 
 #side_footer .footer_center a{
@@ -560,7 +599,7 @@ aside .main_menu_top span{
 
 #side_footer .footer_right > div i{
   font-size: 16px;
-  padding: 0 7px;
+  padding: 0 10px;
   color: white;
 }
 
@@ -581,8 +620,119 @@ aside .main_menu_top span{
 }
 
 /* /footer_right */
-
-
-
 /* /Footer */
 /* /wrapper */
+
+/* media query md */
+
+@media screen and (max-width:1200px) and (min-width:992px) {
+
+  #recently_played .box, #created_for .box, #popular .box{
+    flex-basis: calc(100% / 4);
+  }
+
+}
+
+/* /media query md */
+
+/* media query sm */
+
+@media screen and (max-width:991px) and (min-width:768px) {
+
+  #recently_played .box, #created_for .box, #popular .box{
+    flex-basis: calc(100% / 2);
+  }
+
+}
+
+/* /media query sm */
+
+/* media query xs */
+
+@media screen and (max-width:767px){
+
+  aside.main_menu{
+    min-width: 50px;
+    max-width: 50px;
+  }
+
+  aside .main_menu_top, aside .main_menu_bottom{
+    display: none;
+  }
+
+  .main_menu_top_xs, .main_menu_bottom_xs{
+    display: block;
+  }
+
+  .cover_section{
+    width: calc(100% - 50px);
+  }
+
+  .subcribe_banner{
+    width: calc(100% - 70px);
+  }
+
+  #recently_played .box, #created_for .box, #popular .box{
+    flex-basis: calc(100% / 2);
+  }
+
+  #side_footer{
+    font-size: 70%;
+  }
+
+  #side_footer .footer_left > div.name_song{
+    min-width: 70px;
+  }
+
+  #side_footer .footer_left > div:last-of-type{
+    padding-left: 0;
+    padding-right: 5px;
+  }
+
+  #side_footer .footer_left > div i{
+    font-size: 70%;
+  }
+
+  #side_footer .footer_left > div p{
+    padding-top: 17px;
+    padding-left: 10px;
+    font-size: 70%;
+    font-weight: 600;
+  }
+
+  #side_footer .footer_left > div span{
+    padding-left: 10px;
+    font-size: 70%;
+    font-weight: 600;
+    color: #717479;
+  }
+
+  #side_footer .footer_center > div:first-of-type{
+    margin-top: 10px;
+  }
+
+  #side_footer .footer_center i{
+    padding: 0 10px;
+    font-size: 70%;
+  }
+
+  #side_footer .footer_center .play i{
+    font-size: 150%;
+  }
+
+  #side_footer .footer_center #line_white{
+    width: 15%;
+  }
+
+  #side_footer .footer_center #line_grey{
+    width: 35%;
+  }
+
+  #side_footer .footer_right > div i{
+    font-size: 70%;
+    padding: 0 7px;
+  }
+
+}
+
+/* /media query xs */
